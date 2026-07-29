@@ -14,6 +14,9 @@ sqft_living15 = st.number_input("sqft_living15")
 
 if st.button("Predict Price"):
     features = np.array([[area, bedrooms, bathrooms, floors, sqft_living15]])
-    prediction_usd = model.predict(features)
-    prediction_inr = prediction_usd[0] * 83  # approx USD to INR
-    st.success(f"Predicted Price: ₹ {prediction_inr:,.2f}")
+    prediction = model.predict(features)
+
+    price_usd = prediction[0]
+    price_inr = price_usd * 83
+
+    st.success(f"Predicted Price in USD: $ {price_usd:,.2f}\n" f"Predicted Price in INR: (₹ {price_inr:,.2f})")
