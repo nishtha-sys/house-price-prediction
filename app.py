@@ -19,4 +19,5 @@ if st.button("Predict Price"):
     price_usd = prediction[0]
     price_inr = price_usd * 83
 
-    st.success(f"Predicted Price in USD: $ {price_usd:,.2f}\n" f"Predicted Price in INR: (₹ {price_inr:,.2f})")
+    st.success(f"Predicted Price in USD: $ {price_usd:,.2f}")
+    st.success(f"Predicted Price in INR: (₹ {price_inr:,.2f})")
