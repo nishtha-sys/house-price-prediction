@@ -1,6 +1,7 @@
 # 🏠 House Price Prediction
 
 A machine learning web app that predicts house prices in King County, WA, based on property features. Built with **scikit-learn** for the model and **Streamlit** for the interactive UI.
+Performed EDA and feature selection on 21,600+ property records (King County dataset); trained and evaluated a Linear Regression model (R²: 0.52, MAE: $173.8K), then documented specific next-step improvements (additional features, non-linear models) — demonstrating iterative model evaluation and reporting discipline.
 
 **🔗 Live app:** [nishtha-house-price-prediction.streamlit.app](https://nishtha-house-price-prediction.streamlit.app/)
 
